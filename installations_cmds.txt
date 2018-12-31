@@ -1,0 +1,74 @@
+Installations
+
+sudo apt-get install apache2
+sudo apt-get install mysql-server
+sudo apt install libapache2-mod-php7.0
+sudo apt-get install php
+sudo a2enmod rewrite
+sudo apt-get install vim
+sudo chown -R USER /var/www/html/
+
+
+sudo a2enmod rewrite
+   in  sudo vim /etc/apache2/apache2.config
+     make override none to overideAll  for var/www/
+
+copy the adminer  folder inside html
+
+
+sudo apt-get install php-mysql
+===================================================
+install gjots
+Installing gjots in linux/mint
+sudo apt install gjots2
+===================================================
+php extensions:
+sudo apt-get install php7.0-gd
+===================================================
+xml extensions:
+sudo apt-get install php-xml
+===================================================
+install mbstring:
+sudo apt-get install php7.0-mbstring
+===================================================
+curl install
+sudo apt-get install php-curl
+===================================================
+install git in ubuntu
+sudo apt-get install git
+===================================================
+composer
+sudo apt install composer
+===================================================
+drupal console
+curl https://drupalconsole.com/installer -L -o drupal.phar
+mv drupal.phar /usr/local/bin/drupal
+
+reference link: https://docs.drupalconsole.com/en/getting/launcher.html
+==================================================
+drush
+
+# Browse to https://github.com/drush-ops/drush/releases and download the drush.phar attached to the latest 8.x release.
+
+# Test your install.
+php drush.phar core-status
+
+# Rename to `drush` instead of `php drush.phar`. Destination can be anywhere on $PATH. 
+chmod +x drush.phar
+sudo mv drush.phar /usr/local/bin/drush
+
+# Optional. Enrich the bash startup file with completion and aliases.
+drush init
+
+reference link: http://docs.drush.org/en/8.x/install/
+
+==================================================
+Todo: make drupal cosonle globally
+==================================================
+
+
+
+
+
+
+
